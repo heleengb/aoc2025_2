@@ -1,0 +1,39 @@
+package software.ulpgc.aoc;
+
+import org.junit.jupiter.api.Test;
+import software.ulpgc.aoc.controller.SequenceController;
+import software.ulpgc.aoc.model.HalfRepetitionCriteria;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class SequenceControllerTest {
+
+    @Test
+    void testProcess_WithHalfRepetitionStrategy_Example() {
+        // ejemplo
+        String exampleInput = """
+            11-22,95-115
+            """;
+        long expectedResult = 3; 
+
+        // ejecución
+        var strategy = new HalfRepetitionCriteria();
+        
+        long result = SequenceController.withStrategy(strategy).process(exampleInput);
+
+        // Verificación
+        assertEquals(expectedResult, result, 
+            "El resultado de la estrategia 'HalfRepetitionCriteria' no es el esperado para el ejemplo.");
+    }
+
+    @Test
+    void testProcess_WithEmptyInput() {
+        // entrada vacía
+        String emptyInput = "";
+        var strategy = new HalfRepetitionCriteria();
+
+        long result = SequenceController.withStrategy(strategy).process(emptyInput);
+
+        assertEquals(0, result, "Si la entrada está vacía, el resultado debería ser 0.");
+    }
+}
