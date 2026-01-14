@@ -20,13 +20,10 @@ public class Main2 {
             var strategy = new PeriodicSequenceCriteria();
 
             // Controller
-            long start = System.currentTimeMillis();
             long result = SequenceController.withStrategy(strategy).process(rawData);
-            long end = System.currentTimeMillis();
 
             // View
-            new ConsoleResultPrinter().showResult("Suma (Números Periódicos)", result);
-            System.out.println("Tiempo: " + (end - start) + "ms");
+            new ConsoleResultPrinter().showResult("Parte 2 (Números Periódicos)", result);
 
         } catch (IOException e) {
             System.err.println("Error de lectura: " + e.getMessage());

@@ -16,7 +16,7 @@ public class FileContentReader implements InputReader {
     @Override
     public String readContent() throws IOException {
         try (Stream<String> lines = Files.lines(path)) {
-            // Unimos todas las líneas con comas para procesarlas juntas
+            // Uno todas las líneas con comas para procesarlas juntas
             return lines.collect(Collectors.joining(","));
         }
     }

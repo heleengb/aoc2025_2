@@ -20,13 +20,10 @@ public class Main {
             var strategy = new HalfRepetitionCriteria();
 
             // Controller: Procesamos
-            long start = System.currentTimeMillis();
             long result = SequenceController.withStrategy(strategy).process(rawData);
-            long end = System.currentTimeMillis();
 
             // View
-            new ConsoleResultPrinter().showResult("Suma (Mitades Repetidas)", result);
-            System.out.println("Tiempo: " + (end - start) + "ms");
+            new ConsoleResultPrinter().showResult("Parte 1 (Mitades Repetidas)", result);
 
         } catch (IOException e) {
             System.err.println("Error de lectura: " + e.getMessage());

@@ -15,9 +15,9 @@ public class SumMatchingNumbersCommand {
 
     public long execute() {
         return intervals.stream()
-                .flatMapToLong(NumericInterval::stream)
-                .parallel()
-                .filter(criteria::satisfies)
+                .flatMapToLong(NumericInterval::stream) // De intervalo a la lista d nums
+                .parallel() // Evalúo en paralelo, en diferentes hilos
+                .filter(criteria::satisfies) // metodo reference
                 .sum();
     }
 }

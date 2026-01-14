@@ -20,12 +20,12 @@ public class SequenceController {
     }
 
     public long process(String rawInput) {
-        // Factory logic: Limpieza y creación de objetos Interval
+        // Creación de objetos Interval
         List<NumericInterval> intervals = Arrays.stream(rawInput.split(","))
                 .map(s -> s.trim().replaceAll("\\s+", "")) // Quitar espacios
                 .filter(s -> !s.isEmpty())
                 .map(this::parseInterval)
-                .collect(Collectors.toList());
+                .collect(Collectors.toList()); //Recorre los elementos del Stream y los mete en una lista
 
         return new SumMatchingNumbersCommand(intervals, criteria).execute();
     }
