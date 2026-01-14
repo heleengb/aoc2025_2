@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91c95528-6c6b-4141-81f2-5f318ca177d1" name="Changes" comment="Project finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/command/SumMatchingNumbersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/command/SumMatchingNumbersCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/controller/SequenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/controller/SequenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/io/FileContentReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/io/FileContentReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/view/ConsoleResultPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/aoc/view/ConsoleResultPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768193197506</updated>
       <workItem from="1768193198540" duration="1396000" />
-      <workItem from="1768353339155" duration="2800000" />
+      <workItem from="1768353339155" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="Project finished">
       <option name="closed" value="true" />
@@ -108,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768354159645</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Project finished">
+      <option name="closed" value="true" />
+      <created>1768356180290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768356180290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
