@@ -25,7 +25,7 @@ public class SequenceController {
                 .map(s -> s.trim().replaceAll("\\s+", "")) // Quitar espacios
                 .filter(s -> !s.isEmpty())
                 .map(this::parseInterval)
-                .collect(Collectors.toList()); //Recorre los elementos del Stream y los mete en una lista
+                .collect(Collectors.toList()); // Recorre los elementos del Stream y los mete en una lista
 
         return new SumMatchingNumbersCommand(intervals, criteria).execute();
     }
